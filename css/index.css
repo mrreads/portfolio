@@ -1,0 +1,196 @@
+@font-face
+{
+    font-family: "Oswald";
+    font-weight: normal;
+    font-style: normal;
+
+    src: url("../font/Oswald.ttf");
+}
+
+*, *::before, *::after
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: "Oswald", sans-serif;
+
+    background-color: black;
+}
+
+#wrapper
+{
+    display: flex;
+
+    width: 100%;
+    height: 100vh;
+
+    flex-flow: row wrap;
+}
+
+.block
+{
+    display: flex;
+
+    text-align: center;
+
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.block:nth-child(1)
+{
+    background-color: #FDE74C;
+}
+
+.block:nth-child(2)
+{
+    background-color: #FF5964;
+}
+
+.block:nth-child(3)
+{
+    background-color: #FFFFFF;
+}
+
+.block:nth-child(4)
+{
+    background-color: #5BC0EB;
+}
+
+.block:nth-child(5)
+{
+    background-color: #2FEFCF;
+}
+
+.block
+{
+    font-size: 10vw;
+}
+
+.block a
+{
+    font-size: 10vw;
+
+    position: relative;
+
+    display: flex;
+
+    padding: 0 0.3em;
+
+    transition: all 1s;
+    animation: textIn 1s;
+    text-decoration: none;
+
+    color: rgba(255, 255, 255, 0.5);
+
+    align-items: center;
+    justify-content: center;
+}
+
+.block:not(:nth-child(3)) a:hover
+{
+    transition: all 1s;
+
+    color: rgba(255, 255, 255, 1);
+}
+
+.block:nth-child(3)
+{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.block:nth-child(3) a
+{
+    color: black;
+
+    flex-grow: 1;
+}
+
+.block:not(:nth-child(3)) a::before, .block:not(:nth-child(3)) a::after
+{
+    position: absolute;
+
+    width: 55%;
+    height: 55%;
+
+    content: "";
+    transition: all 0.5s cubic-bezier(1, 0.2, 0.26, 0.7);
+    transform: translate(0px, 0px) scale(0.8);
+
+    opacity: 0;
+    border-width: 0;
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+
+.block:not(:nth-child(3)) a::before
+{
+    bottom: 0;
+    left: 0;
+}
+
+.block:not(:nth-child(3)) a::after
+{
+    top: 0;
+    right: 0;
+}
+
+.block:not(:nth-child(3)) a:hover::before, .block:not(:nth-child(3)) a:hover::after
+{
+    transition: all 2s cubic-bezier(0.14, 1.13, 0, 0.91);
+
+    opacity: 1;
+}
+
+.block:not(:nth-child(3)) a:hover::before
+{
+    transform: translate(-0px, -0px) scale(1);
+
+    border-bottom-width: 0.1em;
+    border-left-width: 0.1em;
+}
+
+.block:not(:nth-child(3)) a:hover::after
+{
+    transform: translate(0px, 0px) scale(1);
+
+    border-top-width: 0.1em;
+    border-right-width: 0.1em;
+}
+
+@media (max-width: 768px)
+{
+    .block
+    {
+        width: 100%;
+        height: auto;
+    }
+    #wrapper
+    {
+        flex-flow: column nowrap;
+    }
+    .block a
+    {
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+@keyframes textIn
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
