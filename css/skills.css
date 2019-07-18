@@ -51,14 +51,19 @@ body
 
 .block:nth-child(1)
 {
+    font-size: 16vw;
+
     color: #000000;
     background-color: #FFFFFF;
 }
+
+
 
 .block:not(:nth-child(1))
 {
     color: white;
 }
+
 
 .block > ul
 {
@@ -72,7 +77,7 @@ body
 
 .block > ul > li
 {
-    font-size: 5vh;
+    font-size: 10vw;
 
     display: flex;
 
@@ -86,7 +91,7 @@ body
 
 .block > ul > li > span
 {
-    font-size: 2vh;
+    font-size: 4vw;
 
     margin-bottom: 10px;
 
@@ -125,5 +130,21 @@ body
     to
     {
         opacity: 1;
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    .block:nth-child(1)
+    {
+        font-size: 7vmax;
+    }
+    .block > ul > li
+    {
+        font-size: 3vmax;
+    }
+    .block > ul > li > span
+    {
+        font-size: 1vmax;
     }
 }
