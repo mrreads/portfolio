@@ -146,16 +146,6 @@ body
     text-transform: uppercase;
 }
 
-.block > ul > li:nth-child(odd)
-{
-    background-color: #FF6B6B;
-}
-
-.block > ul > li:nth-child(even)
-{
-    background-color: #1A535C;
-}
-
 @keyframes textIn
 {
     from

@@ -44,12 +44,12 @@ body
 
 .block:nth-child(1)
 {
-    background-color: #FDE74C;
+    background-color: #2EC4B6;
 }
 
 .block:nth-child(2)
 {
-    background-color: #FF5964;
+    background-color: #E71D36;
 }
 
 .block:nth-child(3)
@@ -59,12 +59,12 @@ body
 
 .block:nth-child(4)
 {
-    background-color: #5BC0EB;
+    background-color: #FF9F1C;
 }
 
 .block:nth-child(5)
 {
-    background-color: #2FEFCF;
+    background-color: #011627;
 }
 
 .block
