@@ -33,6 +33,8 @@ body
 
 .block
 {
+    position: relative;
+
     display: flex;
 
     text-align: center;
@@ -146,7 +148,7 @@ body
     right: 0;
 }
 
-.block:not(:nth-child(3)) a:hover::before, .block:not(:nth-child(3)) a:hover::after
+.block:not(:nth-child(3)) a:not(.icon):hover::before, .block:not(:nth-child(3)) a:not(.icon):hover::after
 {
     transition: all 2s cubic-bezier(0.14, 1.13, 0, 0.91);
 
@@ -169,6 +171,29 @@ body
     border-right-width: 0.1em;
 }
 
+.icon i
+{
+    padding: 25px 5px;
+}
+
+.github
+{
+    left: 0;
+
+    width: 50%;
+}
+
+.codepen
+{
+    right: 0;
+
+    width: 50%;
+}
+
+.icon:hover
+{
+    transform: scale(1.1);
+}
 @keyframes textIn
 {
     from
