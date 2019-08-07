@@ -181,34 +181,41 @@ body
     border-right-width: 0.1em;
 }
 
-.icon i
+.icon
 {
-    padding: 25px 5px;
+    width: 33%;
+    height: 100%;
+
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10vw;
 }
 
 .vk
 {
     left: 0;
 
-    width: 33%;
+    background-image: url("../img/icons/vk.svg");
 }
 
 .github
 {
-    width: 33%;
+    background-image: url("../img/icons/github.svg");
 }
 
 .codepen
 {
     right: 0;
 
-    width: 33%;
+    background-image: url("../img/icons/codepen.svg");
 }
 
 .icon:hover
 {
     transform: scale(1.1);
 }
+
 @keyframes textIn
 {
     from
