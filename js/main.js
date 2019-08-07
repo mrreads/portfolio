@@ -6,7 +6,7 @@ function hideContant()
         document.querySelector(".contact").style.zIndex = "-1";
         document.querySelector(".block:nth-child(5)").style.justifyContent = "space-evenly";
         document.querySelector(".block:nth-child(5)").style.Width = document.querySelector(".block:nth-child(5)").offsetWidth + "px";
-    }, 100);
+    }, 0);
     setTimeout(function()
     {
         document.querySelector(".vk").style.display = "flex";
@@ -18,19 +18,22 @@ function hideContant()
 
 function showContact()
 {
-    setTimeout(function()
+    if (document.querySelector(".codepen").style.display === "flex")
     {
-        document.querySelector(".github").style.display = "none";
-        document.querySelector(".codepen").style.display = "none";
-        document.querySelector(".vk").style.display = "none";
-        document.querySelector(".block:nth-child(5)").style.justifyContent = "center";
-        document.querySelector(".block:nth-child(5)").style.Width = document.querySelector(".block:nth-child(5)").offsetWidth + "px";
-    }, 300);
-    setTimeout(function()
-    {
-        document.querySelector(".contact").style.zIndex = "1";
-        document.querySelector(".contact").style.opacity = "1";
-    }, 600);
+        setTimeout(function()
+        {
+            document.querySelector(".github").style.display = "none";
+            document.querySelector(".codepen").style.display = "none";
+            document.querySelector(".vk").style.display = "none";
+            document.querySelector(".block:nth-child(5)").style.justifyContent = "center";
+            document.querySelector(".block:nth-child(5)").style.Width = document.querySelector(".block:nth-child(5)").offsetWidth + "px";
+        }, 100);
+        setTimeout(function()
+        {
+            document.querySelector(".contact").style.zIndex = "1";
+            document.querySelector(".contact").style.opacity = "1";
+        }, 50);
+    }
 }
 
 let items = document.querySelectorAll(".block:not(:nth-child(5)) a:not(.icon)");

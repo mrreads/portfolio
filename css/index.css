@@ -197,6 +197,7 @@ body
 .contact
 {
     cursor: pointer;
+    transition: 1s all;
 }
 .vk
 {
