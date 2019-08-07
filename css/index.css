@@ -14,14 +14,14 @@
     padding: 0;
 }
 
-::-webkit-scrollbar
+html::-webkit-scrollbar
 {
     display: none;
 }
 
 html
 {
-    overflow-x: hidden;
+    scrollbar-width: none;
 }
 
 body
@@ -84,7 +84,7 @@ body
     font-size: 10vw;
 }
 
-.block a
+.block a:not(.icon)
 {
     font-size: 10vw;
 
@@ -214,6 +214,8 @@ body
 .icon:hover
 {
     transform: scale(1.1);
+
+    opacity: 1;
 }
 
 @keyframes textIn
