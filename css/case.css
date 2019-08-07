@@ -1,0 +1,81 @@
+@font-face
+{
+    font-family: "Oswald";
+    font-weight: normal;
+    font-style: normal;
+
+    src: url("../font/Oswald.ttf");
+}
+
+*, *::before, *::after
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html::-webkit-scrollbar
+{
+    display: none;
+}
+
+html
+{
+    scrollbar-width: none;
+}
+
+body
+{
+    font-family: "Oswald", sans-serif;
+
+    background-color: black;
+}
+
+html, body, #wrapper
+{
+    height: 100%;
+}
+
+li
+{
+    width: 100%;
+}
+
+#wrapper
+{
+    display: flex;
+
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.block
+{
+    display: flex;
+
+    align-items: center;
+    flex-flow: column nowrap;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.block a
+{
+    font-size: 6vw;
+
+    text-decoration: none;
+
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.9);
+}
+
+.block
+{
+    min-height: 300px;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+}
+

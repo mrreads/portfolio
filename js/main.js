@@ -42,3 +42,5 @@ for(let i = 0; i < items.length; i++)
 {
     items[i].addEventListener("mouseover", showContact);
 }
+
+showContact();
