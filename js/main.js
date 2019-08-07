@@ -9,7 +9,7 @@ function hideContant()
     //document.querySelector(".block:nth-child(5)").style.maxWidth = document.querySelector(".block:nth-child(5)").offsetWidth + "px";
     //document.querySelector(".block:nth-child(5)").style.minWidth = document.querySelector(".block:nth-child(5)").offsetWidth + "px";
     
-
+    document.querySelector(".vk").style.display = "flex";
     document.querySelector(".github").style.display = "flex";
     document.querySelector(".codepen").style.display = "flex";
 }

@@ -14,6 +14,16 @@
     padding: 0;
 }
 
+::-webkit-scrollbar
+{
+    display: none;
+}
+
+html
+{
+    overflow-x: hidden;
+}
+
 body
 {
     font-family: "Oswald", sans-serif;
@@ -176,18 +186,23 @@ body
     padding: 25px 5px;
 }
 
-.github
+.vk
 {
     left: 0;
 
-    width: 50%;
+    width: 33%;
+}
+
+.github
+{
+    width: 33%;
 }
 
 .codepen
 {
     right: 0;
 
-    width: 50%;
+    width: 33%;
 }
 
 .icon:hover
