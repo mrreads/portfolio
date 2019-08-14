@@ -99,9 +99,32 @@ li
     background-color: rgb(126, 19, 31);
 }
 
+.block:last-child
+{
+    padding: 15px 25px;
+}
+
+.block a
+{
+    font-size: 4vw;
+
+    transition: 1s all;
+    text-decoration: none;
+
+    color: white;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.9);
+}
+
+.block a:hover
+{
+    transform: scale(1.1);
+
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+}
+
 @media screen and (max-width: 768px)
 {
-    .block p
+    .block p, .block a
     {
         font-size: 7vw;
     }
@@ -113,7 +136,7 @@ li
 
 @media screen and (max-width: 425px)
 {
-    .block p
+    .block p, .block a
     {
         font-size: 10vw;
     }
