@@ -1,0 +1,28 @@
+.back
+{
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+
+    width: 4rem;
+    height: 4rem;
+    margin: 2rem;
+    padding: 2rem;
+
+    transition: 1s all;
+
+    opacity: 0.1;
+    border-radius: 100%;
+    background-color: white;
+    background-image: url("../img/icons/back.svg");
+    background-repeat: no-repeat;
+    background-position: 40% center;
+    background-size: 50%;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.9);
+}
+
+.back:hover
+{
+    opacity: 1;
+}
