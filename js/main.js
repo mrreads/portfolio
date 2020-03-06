@@ -60,3 +60,12 @@ blocks.forEach((block) =>
         }
     });
 });
+
+icons.forEach((icon) => 
+{
+    icon.removeAttribute("style");
+    icon.style.opacity = "0";
+    icon.style.zIndex = "-5";
+});
+concact_butn.style.opacity = "1";
+concact_butn.style.zIndex = "5";
