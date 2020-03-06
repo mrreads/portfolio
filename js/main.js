@@ -1,46 +1,62 @@
+const blocks = document.querySelectorAll('.block:not(:nth-child(5))');
+const concact_butn = document.querySelector('.contact-button');
+const icons = document.querySelectorAll('.icon');
+
+let hideIsActive, showIsActive = false;
+
 function hideContant()
 {
-    setTimeout(function()
+    if (!showIsActive)
     {
-        document.querySelector(".contact").style.opacity = "0";
-        document.querySelector(".contact").style.zIndex = "-1";
-        document.querySelector(".block:nth-child(5)").style.justifyContent = "space-evenly";
-        document.querySelector(".block:nth-child(5)").style.Width = document.querySelector(".block:nth-child(5)").offsetWidth + "px";
-    }, 0);
-    setTimeout(function()
-    {
-        document.querySelector(".vk").style.display = "flex";
-        document.querySelector(".github").style.display = "flex";
-        document.querySelector(".codepen").style.display = "flex";
-    }, 700);
-
+        hideIsActive = true;
+        setTimeout(function()
+        {
+            concact_butn.style.opacity = "0";
+            concact_butn.style.zIndex = "-5";
+        }, 0);
+        setTimeout(function()
+        {
+            icons.forEach((icon) => 
+            {
+                icon.removeAttribute("style");
+                icon.style.zIndex = "5";
+            });
+            hideIsActive = false;
+        }, 1000);
+    }
 }
 
 function showContact()
 {
-    if (document.querySelector(".codepen").style.display === "flex")
+    if (!hideIsActive)
     {
+        showIsActive = true;
         setTimeout(function()
         {
-            document.querySelector(".github").style.display = "none";
-            document.querySelector(".codepen").style.display = "none";
-            document.querySelector(".vk").style.display = "none";
-            document.querySelector(".block:nth-child(5)").style.justifyContent = "center";
-            document.querySelector(".block:nth-child(5)").style.Width = document.querySelector(".block:nth-child(5)").offsetWidth + "px";
-        }, 100);
+            icons.forEach((icon) => 
+            {
+                icon.removeAttribute("style");
+                icon.style.opacity = "0";
+                icon.style.zIndex = "-5";
+            });
+        }, 0);
         setTimeout(function()
         {
-            document.querySelector(".contact").style.zIndex = "1";
-            document.querySelector(".contact").style.opacity = "1";
-        }, 50);
+            concact_butn.style.opacity = "1";
+            concact_butn.style.zIndex = "5";
+            showIsActive = false;
+        }, 1000);
     }
 }
 
-let items = document.querySelectorAll(".block:not(:nth-child(5)) a:not(.icon)");
 
-for(let i = 0; i < items.length; i++)
+blocks.forEach((block) => 
 {
-    items[i].addEventListener("mouseover", showContact);
-}
-
-showContact();
+    block.addEventListener('mouseover', () =>
+    {
+        if (!hideIsActive) 
+        { 
+            showContact();
+        }
+    });
+});
