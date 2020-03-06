@@ -22,7 +22,6 @@ html::-webkit-scrollbar
 html
 {
 	height: 100%;
-
 	scrollbar-width: none;
 }
 

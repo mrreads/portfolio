@@ -12,6 +12,8 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+
+	transition: 1s all;
 }
 
 html::-webkit-scrollbar
@@ -21,6 +23,7 @@ html::-webkit-scrollbar
 
 html
 {
+	width: 100%;
 	height: 100%;
 
 	scrollbar-width: none;
@@ -30,9 +33,10 @@ body
 {
 	font-family: "Oswald", sans-serif;
 
+	width: 100%;
 	min-height: 100%;
 
-	background-color: black;
+	background-color: white;
 }
 
 #wrapper
@@ -58,26 +62,36 @@ body
 
 .block:nth-child(1)
 {
+	transition: 3s all;
+
 	background-color: #2EC4B6;
 }
 
 .block:nth-child(2)
 {
+	transition: 4s all;
+
 	background-color: #E71D36;
 }
 
 .block:nth-child(3)
 {
+	transition: 3s all;
+
 	background-color: #FFFFFF;
 }
 
 .block:nth-child(4)
 {
+	transition: 2s all;
+
 	background-color: #FF9F1C;
 }
 
 .block:nth-child(5)
 {
+	transition: 0s all;
+
 	background-color: #011627;
 }
 
@@ -101,6 +115,7 @@ body
 	margin: 0.1em 0;
 	padding: 0 0.3em;
 
+	transition: 1s all;
 	transition: all 1s;
 	animation: textIn 1s;
 	text-decoration: none;
@@ -212,7 +227,7 @@ body
 	height: 100%;
 
 	cursor: pointer;
-	transition: 1s all;
+	transition: 2s all;
 
 	grid-template-columns: 1fr 1fr 1fr;
 }
@@ -225,6 +240,7 @@ body
 
 	margin: 0;
 
+	transition: 2s all;
 	transform: translate(-50%, -50%);
 
 	background-color: #011627;
