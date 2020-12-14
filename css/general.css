@@ -20,6 +20,12 @@ body
 	min-height: 100%;
 }
 
+a
+{
+    display: block;
+    text-decoration: none;
+}
+
 .container
 {
 	width: 100%;
@@ -27,14 +33,19 @@ body
 	margin: 0 auto;
 }
 
+.main .container, .contacts .container, .sites .container
+{
+    padding: 0 50px;
+}
+
 .main .container
 {
+    padding: 50px;
+
 	display: flex;
 	align-items: center;
 	flex-flow: row nowrap;
 	justify-content: center;
-
-	padding: 50px;
 }
 
 .main img
@@ -48,21 +59,53 @@ body
 
 .info__name
 {
-	font-size: 28px;
+	font-size: 32px;
+
+	margin-bottom: 5px;
 }
 
-.info__year
+.info__additional
 {
 	font-size: 21px;
 }
 
+.sites .container
+{
+    padding-bottom: 25px;
+}
+
 .site
 {
-	margin: 25px;
+    width: 100%;
+    min-height: 100px;
+	margin-bottom: 25px;
 	padding: 25px;
 
 	color: #FFFFFF;
 	border-radius: 25px;
+	background-color: red;
+}
+
+.contacts .container
+{
+	display: flex;
+	flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts .link
+{
+    border-radius: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	min-width: 100px;
+	min-height: 100px;
+	margin: 15px;
+
+	color: #FFFFFF;
 	background-color: red;
 }
 
@@ -86,7 +129,7 @@ body
 		font-size: 8vw;
 	}
 
-	.info__year
+	.info__additional
 	{
 		font-size: 4vw;
 	}
@@ -99,8 +142,13 @@ body
 		font-size: 10vw;
 	}
 
-	.info__year
+	.info__additional
 	{
-		font-size: 7vw;
+		font-size: 6vw;
 	}
+}
+
+hr
+{
+	margin: 50px 0;
 }
