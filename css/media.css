@@ -54,10 +54,15 @@
 	.about_additional
 	{
 		font-size: 7vw;
-	}
+    }
+    .icon-wrapper a
+    {
+        font-size: 6vw;
+    }
 }
 
-@media (hover: none) and (pointer: coarse) {
+@media (hover: none) and (pointer: coarse) 
+{
     .projects-container .project .project_info
     {
         opacity: .9;

@@ -14,6 +14,7 @@ html
 
 body, a, input, button
 {
+	font-size: 23px;
 	font-family: "Open Sans", sans-serif;
 
 	text-align: center;
@@ -32,8 +33,8 @@ h1, h2, h3, h4, h5, h6
 
 a
 {
-	display: block;
-
+	display: inline-block;
+	color: #000000;
 	text-decoration: none;
 }
 
@@ -71,21 +72,20 @@ img
 	margin-top: 15px;
 }
 
-#about, #projects, #skills
+#about, #projects, #skills, #contacts
 {
 	text-align: left;
 }
 
-#about h2, #projects h2, #skills h2
+#about h2, #projects h2, #skills h2, #contacts h2
 {
-	font-size: 28px;
+	font-size: 32px;
+	margin-bottom: 25px;
 }
 
 .projects-container
 {
 	display: grid;
-
-	margin-top: 25px;
 
 	grid-gap: 15px;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -140,4 +140,24 @@ img
 .projects-container .project:hover .project_info
 {
 	opacity: 1;
+}
+
+
+.icon-wrapper
+{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.icon-wrapper:last-child
+{
+	margin-bottom: 0;
+}
+
+.icon
+{
+	margin-right: 15px;
+	max-height: 36px;
+	max-width: 36px;
 }
