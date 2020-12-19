@@ -56,3 +56,10 @@
 		font-size: 7vw;
 	}
 }
+
+@media (hover: none) and (pointer: coarse) {
+    .projects-container .project .project_info
+    {
+        opacity: .9;
+    }
+}
