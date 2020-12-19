@@ -1,24 +1,58 @@
+@media screen and (max-width: 1440px)
+{
+	.projects-container
+	{
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 1024px)
+{
+	.container
+	{
+		padding: 50px 25px;
+	}
+}
+
 @media screen and (max-width: 768px)
 {
-    .about_fullname
-    {
-        font-size: 9vw;
+	.container
+	{
+		padding: 50px 20px;
+	}
+	.about_fullname
+	{
+		font-size: 9vw;
+	}
+	.about_additional
+	{
+		font-size: 4vw;
+
+		margin-top: 5px;
     }
-    .about_additional
+    .projects-container
+	{
+		grid-template-columns: 1fr;
+    }
+    .projects-container .project .project_info
     {
-        margin-top: 5px;
-        font-size: 4vw;
+        height: unset;
+        min-height: 100%;
     }
 }
 
 @media screen and (max-width: 425px)
 {
-    .about_fullname
-    {
-        font-size: 16vw;
-    }
-    .about_additional
-    {
-        font-size: 7vw;
-    }
+	.container
+	{
+		padding: 50px 15px;
+	}
+	.about_fullname
+	{
+		font-size: 16vw;
+	}
+	.about_additional
+	{
+		font-size: 7vw;
+	}
 }
