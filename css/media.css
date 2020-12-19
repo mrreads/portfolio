@@ -2,6 +2,23 @@
 {
     .about_fullname
     {
-        font-size: ;
+        font-size: 9vw;
+    }
+    .about_additional
+    {
+        margin-top: 5px;
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 425px)
+{
+    .about_fullname
+    {
+        font-size: 16vw;
+    }
+    .about_additional
+    {
+        font-size: 7vw;
     }
 }
