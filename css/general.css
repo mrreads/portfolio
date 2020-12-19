@@ -102,7 +102,7 @@ img
 
 	height: 300px;
 
-	box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 .projects-container .project .project_info
@@ -193,4 +193,76 @@ img
 .toTop:hover
 {
 	opacity: 0.7;
+}
+
+.about-info
+{
+	display: grid;
+	grid-template-areas: 
+				"image text"
+				"image list"
+				"image button";
+	grid-gap: 35px;
+}
+
+.about-info-text
+{
+	grid-area: text;
+}
+.about-image
+{
+	grid-area: image;
+}
+.about-list
+{
+	grid-area: list;
+}
+.download-cv
+{
+	grid-area: button;
+}
+.about-image
+{
+	order: -1;
+	box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.2);
+	max-width: 300px;
+}
+
+.about-info span
+{
+	font-weight: bold;
+
+	margin-left: 5px;
+}
+
+.download-cv
+{
+	font-size: 23px;
+
+	justify-self: baseline;
+
+	margin-top: 25px;
+	padding: 15px 50px;
+
+	transition: 0.6s all;
+
+	opacity: 0.4;
+	color: #FFFFFF;
+	background-color: #341F40;
+}
+
+.download-cv:hover
+{
+	opacity: 1;
+	background-color: #887792;
+}
+
+.about-info-text
+{
+	margin-bottom: 25px;
+}
+
+h2::after
+{
+	content: ':';
 }

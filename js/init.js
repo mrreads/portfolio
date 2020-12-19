@@ -1,4 +1,4 @@
-ScrollReveal().reveal('.anim', { reset: true });
+ScrollReveal().reveal('.anim');
 
 new TypeIt("#type", {
     speed: 50,
