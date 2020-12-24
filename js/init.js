@@ -1,4 +1,4 @@
-ScrollReveal().reveal('.anim');
+ScrollReveal().reveal('.anim', { delay: 150 });
 
 new TypeIt("#type", {
     speed: 50,
