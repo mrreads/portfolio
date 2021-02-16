@@ -198,11 +198,11 @@ img
 .about-info
 {
 	display: grid;
-	grid-template-areas: 
-				"image text"
-				"image list"
-				"image button";
+
 	grid-gap: 35px;
+	grid-template-areas: "image text"
+	"image list"
+	"image button";
 }
 
 .about-info-text
@@ -224,8 +224,10 @@ img
 .about-image
 {
 	order: -1;
-	box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.2);
+
 	max-width: 300px;
+
+	box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 .about-info span
@@ -239,8 +241,6 @@ img
 {
 	font-size: 23px;
 
-	justify-self: baseline;
-
 	margin-top: 25px;
 	padding: 15px 50px;
 
@@ -249,6 +249,8 @@ img
 	opacity: 0.4;
 	color: #FFFFFF;
 	background-color: #341F40;
+
+	justify-self: baseline;
 }
 
 .download-cv:hover
@@ -264,5 +266,42 @@ img
 
 h2::after
 {
-	content: ':';
+	content: ":";
+}
+
+.accordion
+{
+	padding-bottom: 25px;
+}
+
+.accord_title
+{
+	padding: 15px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accord_title .arrow
+{
+	max-height: 22px;
+    max-width: 22px;
+	transform: rotate(180deg);
+	transition: 0.3s all;
+}
+
+.accord_info
+{
+	font-size: 19px;
+	overflow: hidden;
+
+	max-height: 0;
+	padding: 0 25px;
+	padding-bottom: 0;
+
+	transition: 0.7s all;
+
+	background-color: #FAF5FD;
 }
