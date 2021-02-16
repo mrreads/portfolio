@@ -41,17 +41,16 @@
 	}
 	.about-wrapper
 	{
-		justify-content: center;
-    	align-items: center;
+		align-items: center;
 		flex-flow: column nowrap;
+		justify-content: center;
 	}
 	.about-info
 	{
-		grid-template-areas: 
-		"text text"
+		grid-gap: 35px;
+		grid-template-areas: "text text"
 		"image list"
 		"button button";
-		grid-gap: 35px;
 	}
 	.about-image
 	{
@@ -88,7 +87,7 @@
 	}
 	h2::after
 	{
-		content: '';
+		content: "";
 	}
 	.about-list
 	{
@@ -98,8 +97,9 @@
 	}
 	.accord_title, .accord_info
 	{
-		text-align: center;
 		justify-content: center;
+
+		text-align: center;
 	}
 	.accord_title .arrow
 	{
@@ -132,9 +132,9 @@
 	.about-info
 	{
 		display: flex;
+		align-items: center;
 		flex-flow: column nowrap;
 		justify-content: center;
-		align-items: center;
 	}
 	.download-cv
 	{

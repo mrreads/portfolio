@@ -276,25 +276,30 @@ h2::after
 
 .accord_title
 {
+	font-weight: bold;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
 	padding: 15px 25px;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+	cursor: pointer;
 }
 
 .accord_title .arrow
 {
+	max-width: 22px;
 	max-height: 22px;
-    max-width: 22px;
-	transform: rotate(180deg);
+
 	transition: 0.3s all;
+	transform: rotate(180deg);
 }
 
 .accord_info
 {
 	font-size: 19px;
+
 	overflow: hidden;
 
 	max-height: 0;
