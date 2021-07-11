@@ -19,6 +19,7 @@ new TypeIt("#type", {
 
 document.querySelectorAll('.accord_title').forEach(acc => {
     acc.addEventListener('click', a => {
+
         let additionalInfo;
 
         if (a.target.tagName == 'IMG')
@@ -28,7 +29,7 @@ document.querySelectorAll('.accord_title').forEach(acc => {
 
         if (additionalInfo.classList.contains('hide'))
         {
-            additionalInfo.style.maxHeight = '150px';
+            additionalInfo.style.maxHeight = '1500px';
             additionalInfo.style.paddingBottom = '15px';
             acc.querySelector('.arrow').style.transform = 'rotate(0deg)';
 
