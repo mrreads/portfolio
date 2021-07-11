@@ -1,18 +1,25 @@
 ScrollReveal().reveal('.anim', { delay: 150 });
 
 new TypeIt("#type", {
-    speed: 50,
+    speed: 55,
     startDelay: 900
 })
-.type("Я - разработчик сайтов", {delay: 100})
-.delete(7)
+.type("Я - разработчик сайтов, дизайнер.", {delay: 100})
+.delete(18)
 .move(-10, {speed: 50, delay: 100})
-.delete(5)
+.delete(7)
 .type("Веб-р", {delay: 200})
 .move(10, {speed: 150, delay: 100})
 .type(".", {delay: 250})
 .delete(1)
-.type(", дизайнер.", {delay: 2250})
+.type(", CG-generalist.", {delay: 1250})
+.type("..", {delay: 500})
+.delete(18)
+.type("!", {delay: 700})
+.move(-13, {speed: 50, delay: 100})
+.delete(3)
+.type("Frontend", {delay: 1250})
+.move(15, {speed: 150, delay: 100})
 .go();
 
 
